@@ -8,10 +8,10 @@ function StarScale({ scaleValue }) {
 	while (++index <= 5) {
 
 		if (scaleValue < index) {
-			range.push(<img src={ emptyStar } alt="Empty star" />)
+			range.push(<img key={index} src={ emptyStar } alt="Empty star" />)
 		}
 		else {
-			range.push(<img src={ lightStar } alt="Star " />)
+			range.push(<img key={index}src={ lightStar } alt="Star " />)
 		}
 
 	}

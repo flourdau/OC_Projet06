@@ -11,7 +11,7 @@ function Card({ id, title, cover, pictures, description, host, rating, location,
 			<img className='kasa-item-cover' src={cover} alt={`${title} cover`} />
 			<h2>{title}</h2>
 			<div>
-				{/* <StarScale scaleValue={rating} /> */}
+				<StarScale scaleValue={rating} />
 			</div>
 		</div>
 	)
