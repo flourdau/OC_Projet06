@@ -1,0 +1,16 @@
+.kasa-banner {
+	color: black;
+	text-align: right;
+	padding: 32px;
+	border-bottom: solid 3px black;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+
+.kasa-title {
+}
+
+.kasa-logo {
+}
