@@ -1,0 +1,19 @@
+.collapse-bar{
+	background-color:#FF6060;
+}
+
+.collapse-content-close {
+	display: none;
+}
+
+.collapse-content-open {
+	display: flex;
+}
+
+.arrowUp {
+	transform: rotate(180deg);
+}
+
+.arrowDown {
+	transform: rotate(0);
+}

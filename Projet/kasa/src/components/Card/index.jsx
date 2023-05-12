@@ -1,20 +1,16 @@
-import StarScale from '../StarScale'
+import { Link } from 'react-router-dom';
 import './Card.css'
 
 function handleClick(title) {
 	console.log('click' + title)
 }
 
-function Card({ id, title, cover, pictures, description, host, rating, location, equipements, tags }) {	
+export default function Card({ id, title, cover }) {	
 	return (
-		<div className='kasa-item' onClick={() => handleClick(title)}>
-			<img className='kasa-item-cover' src={cover} alt={`${title} cover`} />
-			<h2>{title}</h2>
-			<div>
-				<StarScale scaleValue={rating} />
-			</div>
+		<div className='kasa-item' onClick = { () => handleClick(title) }>
+			<img className='kasa-item-cover' src={ cover } alt={`${ title } cover`} />
+			<Link className='kasa-item-link' to={ `/product/${id}` } >
+            <h2>{title}</h2>
+        	</Link>
 		</div>
-	)
-}
-
-export default Card
+)}

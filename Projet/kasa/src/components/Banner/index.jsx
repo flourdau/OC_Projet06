@@ -1,19 +1,8 @@
-import { Link } from 'react-router-dom'
 import './Banner.css'
 
-function Banner({ children }) {
+export default function Banner({ page }) {
 	return (
-	<header className='kasa-banner'>
-		
-		{children}
-
-		<nav>
-            <Link to="/">Accueil</Link>
-            <Link to="/a_propos">A propos</Link>
-		</nav>
-		
-	</header>
-	)
-}
-
-export default Banner
+		<section className='kasa-banner'>
+			<h2>Chez vous, partout et ailleurs</h2>
+		</section>
+)}
