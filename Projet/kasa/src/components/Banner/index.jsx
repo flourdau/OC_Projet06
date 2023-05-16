@@ -1,8 +1,10 @@
 import './Banner.css'
 
-export default function Banner({ page }) {
+export default function Banner({ slogan }) {
+
 	return (
 		<section className='kasa-banner'>
-			<h2>Chez vous, partout et ailleurs</h2>
+			<h2>{ slogan }</h2>
 		</section>
+
 )}

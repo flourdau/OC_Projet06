@@ -3,7 +3,10 @@ import { useParams, useNavigate } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
 
 import StarScale from '../../components/StarScale'
+import Host from '../../components/Host'
+import Tag from '../../components/Tag'
 import Carrousel from '../../components/Carrousel'
+import Collapse from '../../components/Collapse'
 
 import Data from '../../datas/Product.json'
 
@@ -27,18 +30,27 @@ export default function Products() {
 	return (
 		<div className='kasa-item'>
 			<Carrousel pictures={ product.pictures }/>
-			<img className='kasa-item-cover' src={product.cover} alt={`${product.title} cover`} />
+			{/* <img className='kasa-item-cover' src={ product.cover } alt={ `${product.title} cover` } /> */}
 			
-			<div className='blocInfo'>
+			<section className='blocInfo'>
                         <div>
-                            <h1>{product.title}</h1>
-                            <h2>{product.location}</h2>
+                            <h1>{ product.title }</h1>
+                            <h2>{ product.location }</h2>
+							<div>
+                            { product.tags.map(tag => <Tag key={ `${ product.id }-${ tag }`} tag={ tag } />)}
+                        </div>
                         </div>
 
 						<div>
-							<StarScale scaleValue={product.rating} />
+							<StarScale scaleValue={ product.rating } />
+							<Host name={ product.host.name } picture={ product.host.picture }/>
 						</div>
-			</div>
+
+						<div className="">
+							<Collapse title={`Description`} content={ product.description }/>
+							<Collapse title={`Équipements`} content={ product.equipments }/>
+						</div>
+			</section>
 		</div>
 	)
 }

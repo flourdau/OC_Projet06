@@ -10,7 +10,7 @@ export default function App() {
 
         <div className="App"> 
 
-            <Banner />
+            <Banner slogan="Chez vous, partout et ailleurs" />
 
             <main>
                 <ul>

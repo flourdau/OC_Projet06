@@ -7,7 +7,7 @@ function handleClick(title) {
 	console.log('click' + title)
 }
 
-export default function Carousel({pictures}) {
+export default function Carousel({ pictures }) {
 
     return (
 
@@ -17,9 +17,8 @@ export default function Carousel({pictures}) {
             <ul>
             { pictures.map((element) => (
                 <li>
-                    <img key={`${element}`} src={`${element}`} alt={`${element}`} />
-                </li>
-            )) }
+                    <img key={ `${element}` } src={ `${element}` } alt={` ${element}` } />
+                </li>)) }
             </ul>
         </section>
     )
