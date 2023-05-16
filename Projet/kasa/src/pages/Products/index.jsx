@@ -27,7 +27,7 @@ export default function Products() {
 	return (
 		<div className='kasa-item'>
 			<Carrousel pictures={ product.pictures }/>
-			{/* <img className='kasa-item-cover' src={product.cover} alt={`${product.title} cover`} /> */}
+			<img className='kasa-item-cover' src={product.cover} alt={`${product.title} cover`} />
 			
 			<div className='blocInfo'>
                         <div>
@@ -35,12 +35,10 @@ export default function Products() {
                             <h2>{product.location}</h2>
                         </div>
 
- 
-
 						<div>
 							<StarScale scaleValue={product.rating} />
 						</div>
-						</div>
 			</div>
+		</div>
 	)
 }
