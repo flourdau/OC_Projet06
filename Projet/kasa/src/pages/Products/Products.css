@@ -1,0 +1,24 @@
+.kasa-product {
+    color: #FF6060;
+}
+
+.kasa-product h1 {
+    font-style:medium;
+    font-size: 36px;
+    line-height: 51px;
+    vertical-align: Bottom;
+}
+
+
+.kasa-product h2 {
+    font-style:medium;
+    font-size: 18px;
+    line-height: 26px;
+    vertical-align: Bottom;
+}
+
+.blocInfo, .blocList, .starsList, .tagsList, .blocCollapse {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}

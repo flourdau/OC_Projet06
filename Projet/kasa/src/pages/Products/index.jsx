@@ -4,7 +4,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import StarScale from '../../components/StarScale'
 import Host from '../../components/Host'
 import Tag from '../../components/Tag'
-import Carrousel from '../../components/Carrousel'
+import Carrousel from '../../components/Carousel'
 import Collapse from '../../components/Collapse'
 
 import Data from '../../datas/Product.json'
@@ -24,22 +24,24 @@ export default function Products() {
     })
 
 	return (
-		<div className='kasa-item'>
+		<div className='kasa-product'>
 			<Carrousel pictures={ product.pictures }/>
-			<section className='blocInfo'>
-                        <div>
-                            <h1>{ product.title }</h1>
-                            <h2>{ product.location }</h2>
-							<div> { product.tags.map(tag => <Tag key={ `${ product.id }-${ tag }`} tag={ tag } />)}</div>
-                        </div>
-						<div>
-							<StarScale scaleValue={ product.rating } />
-							<Host name={ product.host.name } picture={ product.host.picture }/>
-						</div>
-						<div className="info">
-							<Collapse title={`Description`} content={ product.description }/>
-							<Collapse title={`Équipements`} content={ product.equipments }/>
-						</div>
+			<section>
+				<div className="blocInfo">
+					<div>
+						<h1>{ product.title }</h1>
+						<h2>{ product.location }</h2>
+					</div>
+					<Host name={ product.host.name } picture={ product.host.picture }/>
+				</div>
+				<div  className="blocList">
+					<ul className='tagsList'>{ product.tags.map(tag => <Tag key={ `${ product.id }-${ tag }`} tag={ tag } />)}</ul>
+					<ul className='starsList'><StarScale scaleValue={ product.rating } /></ul>
+				</div>
+				<div className="blocCollapse">
+					<Collapse title={`Description`} content={ product.description }/>
+					<Collapse title={`Équipements`} content={ product.equipments }/>
+				</div>
 			</section>
 		</div>
 )}
