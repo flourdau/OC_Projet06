@@ -1,5 +1,4 @@
 import Router from '../Routers'
-// import Footer from '../Footer'
 import './Layout.css'
 
 export default function Layout() {

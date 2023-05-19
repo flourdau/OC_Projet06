@@ -15,6 +15,5 @@ export default function About() {
                 content={ content }
             />))
         }
-        </main>)
-
-}
+        </main>
+)}

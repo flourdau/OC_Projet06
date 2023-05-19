@@ -5,7 +5,6 @@ import './Header.css'
 export default function Header({ logo }) {
 
 	return (
-
 		<header className='kasa-banner'>
 			<h1><img src={ logo } alt='kasa' className='kasa-logo' /></h1>
 			<nav>
@@ -13,5 +12,4 @@ export default function Header({ logo }) {
 				<Link to="/a_propos">A propos</Link>
 			</nav>
 		</header>
-
 )}

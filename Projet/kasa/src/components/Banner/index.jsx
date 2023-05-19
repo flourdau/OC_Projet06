@@ -6,5 +6,4 @@ export default function Banner({ slogan }) {
 		<section className='kasa-banner'>
 			<h2>{ slogan }</h2>
 		</section>
-
 )}

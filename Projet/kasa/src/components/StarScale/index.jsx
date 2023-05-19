@@ -10,7 +10,8 @@ export default function StarScale({ scaleValue }) {
 
         if (scaleValue < index) {
             range.push(<img key={ index } src={ emptyStar } alt="Empty star" />)
-        } else {
+        }
+        else {
             range.push(<img key={ index } src={ lightStar } alt="Star " />)
         }
 

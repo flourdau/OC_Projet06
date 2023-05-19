@@ -9,9 +9,7 @@ export default function App() {
     return (
 
         <div className="App"> 
-
             <Banner slogan="Chez vous, partout et ailleurs" />
-
             <main>
                 <ul>
                 { Data.map(({ id, title, cover }) => (
@@ -25,7 +23,6 @@ export default function App() {
                 ))}
                 </ul>
             </main>
-
         </div>
 
 )}
