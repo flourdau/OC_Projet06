@@ -29,8 +29,8 @@ export default function Products() {
 
 	return (
 		<div className='kasa-item'>
+
 			<Carrousel pictures={ product.pictures }/>
-			{/* <img className='kasa-item-cover' src={ product.cover } alt={ `${product.title} cover` } /> */}
 			
 			<section className='blocInfo'>
                         <div>
