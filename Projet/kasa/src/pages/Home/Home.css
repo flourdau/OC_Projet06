@@ -1,0 +1,8 @@
+main ul {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main ul>li {
+    width:340px
+}

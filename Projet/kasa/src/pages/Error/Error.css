@@ -1,0 +1,15 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FF6060;
+}
+
+.error  h2 {
+    font-size: 203px;
+}
+
+.error  h3 {
+    font-size: 38px;    
+}

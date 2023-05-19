@@ -22,3 +22,11 @@
     flex-flow: row;
     justify-content: space-between;
 }
+
+ul {
+	list-style: none;
+}
+
+li {
+    color: #FFF;
+}

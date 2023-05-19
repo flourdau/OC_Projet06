@@ -1,27 +1,19 @@
 .kasa-item-cover {
-	height: 250px;
-	width: 250px;
-	border-radius: 20px;
-	object-fit: cover;
+	height: 280px;
+	border-radius: 25px
 }
 
 .kasa-item {
-	margin: 10px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	text-transform: capitalize;
-	position: relative;
+    display: flex;
+	flex-flow: column;
+    padding: 15px;
 }
 
-.kasa-item-price {
-	position: absolute;
-	border-radius: 20px 20px 20px 0;
-	background-color: #31b472;
-	color: white;
-	padding: 15px;
-	right: 0;
-	top: 0;
-	font-weight: 500;
+.kasa-item h2 {
+    font-size: 18px;
+    color: #FFF;
+    font-weight: normal;
+	text-decoration: none;
+	position: relative;
+	top:-75px
 }
