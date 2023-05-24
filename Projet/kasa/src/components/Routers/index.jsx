@@ -17,13 +17,13 @@ export default function Routers() {
 
     <Router>
 
-        <Header logo={logo} />
+        <Header logo={ logo } />
         <main>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path='/product/:id' element={<Product />} />
-                <Route path="/a_propos" element={<About />} />
-                <Route path="*" element={<Error />} />
+                <Route path="/" element={ <Home /> } />
+                <Route path='/product/:id' element={ <Product /> } />
+                <Route path="/a_propos" element={ <About /> } />
+                <Route path="*" element={ <Error /> } />
             </Routes>
         </main>
         <Footer logo={logo} />

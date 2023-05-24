@@ -9,20 +9,18 @@ export default function App() {
     return (
 
         <div className="App"> 
-            <Banner slogan="Chez vous, partout et ailleurs" />
-            <main>
-                <ul>
-                { Data.map(({ id, title, cover }) => (
-                    <li key={`${ id }`}>
-                        <Card
-                            id={ id }
-                            title={ title }
-                            cover={ cover }
-                        />
-                    </li>
-                ))}
-                </ul>
-            </main>
+            <Banner page="home" slogan="Chez vous, partout et ailleurs" />
+            <ul>
+            { Data.map(({ id, title, cover }) => (
+                <li key={`${ id }`}>
+                    <Card
+                        id={ id }
+                        title={ title }
+                        cover={ cover }
+                    />
+                </li>
+            ))}
+            </ul>
         </div>
 
 )}

@@ -1,6 +1,8 @@
 main ul {
     display: flex;
     flex-flow: row wrap;
+    margin: 32px auto;
+    padding: 32px 0;
 }
 
 main ul>li {

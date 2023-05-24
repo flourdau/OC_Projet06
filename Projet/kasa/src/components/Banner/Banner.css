@@ -2,8 +2,17 @@
 	color: black;
 	text-align: right;
 	padding: 32px;
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-	align-items: center;
+	width: 100%;
+    margin: 0 auto;
+    height: 223px;
+    padding: 10px;
+    border-radius: 25px
+}
+
+.kasa-banner h2 {
+	position: relative;
+	top:0;
+	left:0;
+    font-size: 48px;
+    color: white
 }

@@ -17,12 +17,15 @@ export default function Carousel({ pictures }) {
     }
 
     const handleClick = switchPicture => (
+
         switchPicture === 'next'
             ? (setId(id === lenPictures ? 1 : id + 1))
             : (setId(id === 1 ? lenPictures : id - 1))
+
     )
 
     return (
+
         <section className='carousel'>
             <img className="carousel_pic" src={ pictures[id - 1] } alt="Représentation du logement" />
             <div className={ myClassName }>
