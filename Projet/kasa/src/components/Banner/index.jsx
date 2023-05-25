@@ -14,9 +14,15 @@ export default function Banner({ page, slogan }) {
 		imgPage = imgAbout
 	}
 
+	const background = {
+		background: `url("${imgPage}")`,
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'cover',
+		backgroundPosition: 'center'
+	}
+
 	return (
-		<section className='kasa-banner'>
-			<img src={ imgPage } alt="représentatio d'un paysage"/>
+		<section className='kasa-banner' style={ background }>
 			<h2>{ slogan }</h2>
 		</section>
 )}

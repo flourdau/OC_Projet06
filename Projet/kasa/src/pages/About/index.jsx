@@ -10,8 +10,8 @@ export default function About() {
     return (
 
         <div className="App"> 
-        <Banner page="about" />
-            <main>
+            <Banner page="about" />
+            <ul>
             { Data.map(({ index, title, content }, i) => (
                 <Collapse 
                     index={ i } 
@@ -19,6 +19,6 @@ export default function About() {
                     content={ content }
                 />))
             }
-            </main>
+            </ul>
         </div>
 )}

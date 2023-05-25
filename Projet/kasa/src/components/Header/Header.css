@@ -1,17 +1,31 @@
-.kasa-banner {
+.kasa-header {
+    width: 100%;
     max-width: 1240px;
+    min-width: 280px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0px;
+    font-size: 24px;
 }
 
-.kasa-banner img {
+.kasa-header img {
     width:100%;
     min-width:150px;
 }
 
-.kasa-banner nav {
+.kasa-header nav {
+    margin-left: auto;
     display: flex;
+    gap: 57px;
+    flex-flow:row;
     flex-wrap: wrap;
-    gap: 15px;
-    font-size: 24px;
+    justify-content: flex-end;
+    font-size: 24px
+}
+
+.kasa-header nav a {
+    color: #FF6060;
+    text-decoration: none;
 }

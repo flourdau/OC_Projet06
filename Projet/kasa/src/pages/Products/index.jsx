@@ -19,7 +19,7 @@ export default function Products() {
 
 	useEffect(() => {
         if(product === undefined) {
-            navigate('/error-product');
+            navigate('/error')
         }
     })
 

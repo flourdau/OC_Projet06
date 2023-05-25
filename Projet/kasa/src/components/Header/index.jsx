@@ -5,7 +5,7 @@ import './Header.css'
 export default function Header({ logo }) {
 
 	return (
-		<header className='kasa-banner'>
+		<header className='kasa-header'>
 			<h1><img src={ logo } alt='kasa' className='kasa-logo' /></h1>
 			<nav>
 				<Link to="/">Accueil</Link>
