@@ -11,14 +11,14 @@ export default function About() {
 
         <div className="aboutContainer"> 
             <Banner page="about" />
-            <ul>
+            {/* <ul> */}
             { Data.map(({ index, title, content }, i) => (
-                <Collapse 
+                <Collapse
                     index={ i } 
                     title={ title } 
                     content={ content }
                 />))
             }
-            </ul>
+            {/* </ul> */}
         </div>
 )}

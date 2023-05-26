@@ -17,8 +17,6 @@ export default function Products() {
     const { id } = useParams();
 	const [ product ] = Data.filter(data => data.id === id);
 
-	console.log(product)
-
 	useEffect(() => {
         if(product === undefined) {
             navigate('/error')
@@ -39,10 +37,10 @@ export default function Products() {
 					</div>
 					<div  className="blocList">
 						<ul className='tagsList'>
-							{ 
-								product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />)
-							}
-							</ul>
+						{ 
+							product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />)
+						}
+						</ul>
 						<ul className='starsList'><StarScale scaleValue={ product.rating } /></ul>
 					</div>
 					<div className="blocCollapse">
