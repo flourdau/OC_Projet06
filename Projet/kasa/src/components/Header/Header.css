@@ -1,6 +1,6 @@
 .kasa-header {
     width: 100%;
-    max-width: 1240px;
+    margin: auto 100px;
     min-width: 280px;
     display: flex;
     flex-direction: row;

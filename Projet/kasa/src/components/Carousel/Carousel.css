@@ -1,4 +1,5 @@
 .carousel {
+    margin: auto;
     max-width: 1240px;
     width: 100%;
     overflow: hidden;
@@ -13,13 +14,12 @@
 
 .carousel_btn {
     max-width: 1240px;
-    padding: 2px;
-    width: 100%;
     display: flex;
     flex-flow:row;
     justify-content: space-between;
-    position: absolute;
-    top:40%
+    position: relative;
+    top:-260px;
+    margin: 0 3%;
 }
 
 .carousel_btn > img {

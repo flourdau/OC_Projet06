@@ -1,4 +1,4 @@
-ul {
+.aboutContainer ul {
     display: flex;
     flex-flow: column;
     gap:31px

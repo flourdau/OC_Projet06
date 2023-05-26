@@ -14,7 +14,7 @@ export default function StarScale({ scaleValue }) {
             range.push(<li><img key={ index } src={ emptyStar } alt="Empty star" /></li>)
         }
         else {
-            range.push(<li><img key={ index } src={ lightStar } alt="Star " /></li>)
+            range.push(<li><img key={ index } src={ lightStar } alt="Star" /></li>)
         }
 
     }

@@ -1,9 +1,14 @@
-.starsList ul {
+.starsList {
     width: 198px;
     display: flex;
     flex-flow: row nowrap;
+    justify-content: flex-end
+}
+
+.starsList ul {
+        gap:10px
 }
 
 .star {
-    width: 5px;
+    /* width: 5px; */
 }

@@ -25,8 +25,8 @@ return (
                 <Route path="/" element={ <Home /> } />
                 <Route path='/product/:id' element={ <Product /> } />
                 <Route path="/a_propos" element={ <About /> } />
-                <Route path="*" element={ <Error /> } />
                 <Route path="/error" element={ <Error /> } />
+                <Route path="*" element={ <Error /> } />
             </Routes>
         </main>
 

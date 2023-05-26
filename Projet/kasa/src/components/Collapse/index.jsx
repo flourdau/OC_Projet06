@@ -15,7 +15,8 @@ export default function Collapse({index, title, content}) {
             <h3 className='collapse-bar' onClick={ () => setRotate(!rotate) } >{ title }
                 <img className={ rotate ? 'arrowUp' : 'arrowDown' } src={ Arrow } alt={ rotate ? "Up" : "Down" } />
             </h3>
-            { !Array.isArray(content) ? (<p className={ rotate ? 'collapse-content-open' : 'collapse-content-close' }>{ `${ content } ` }</p>)
+            { !Array.isArray(content) 
+            ? (<p className={ rotate ? 'collapse-content-open' : 'collapse-content-close' }>{ `${ content } ` }</p>)
             : (<ul className={ rotate ? 'collapse-content-open' : 'collapse-content-close' }>
                 { content.map((item, i) => (<li key={ i }>{ item }</li>))}
             </ul>)
