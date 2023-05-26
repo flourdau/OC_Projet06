@@ -8,7 +8,7 @@ import './Home.css'
 export default function App() {
     return (
 
-        <div className="App"> 
+        <div className="homeContainer"> 
             <Banner page="home" slogan="Chez vous, partout et ailleurs" />
             <ul>
             { Data.map(({ id, title, cover }) => (

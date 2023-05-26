@@ -9,7 +9,7 @@ export default function About() {
 
     return (
 
-        <div className="App"> 
+        <div className="aboutContainer"> 
             <Banner page="about" />
             <ul>
             { Data.map(({ index, title, content }, i) => (

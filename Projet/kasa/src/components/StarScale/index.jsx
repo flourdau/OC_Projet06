@@ -1,6 +1,8 @@
 import emptyStar from '../../assets/emptyStar.svg'
 import lightStar from '../../assets/lightStar.svg'
 
+import './StarScale.css'
+
 export default function StarScale({ scaleValue }) {
 
     let range = []

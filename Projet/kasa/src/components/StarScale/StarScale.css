@@ -1,0 +1,9 @@
+.starsList ul {
+    width: 198px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.star {
+    width: 5px;
+}

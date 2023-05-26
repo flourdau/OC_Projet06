@@ -18,13 +18,13 @@ export default function Products() {
 	const [ product ] = Data.filter(data => data.id === id);
 
 	useEffect(() => {
-        if(product === undefined) {
+        if(!product || product === undefined) {
             navigate('/error')
         }
     })
 
 	return (
-		<div className='kasa-product'>
+		<div className='productContainer'>
 			<Carrousel pictures={ product.pictures }/>
 			<section>
 				<div className="blocInfo">
@@ -35,7 +35,11 @@ export default function Products() {
 					<Host name={ product.host.name } picture={ product.host.picture }/>
 				</div>
 				<div  className="blocList">
-					<ul className='tagsList'>{ product.tags.map(tag => <Tag key={ `${ product.id }-${ tag }`} tag={ tag } />)}</ul>
+					<ul className='tagsList'>
+						{ 
+							product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />)
+						}
+						</ul>
 					<ul className='starsList'><StarScale scaleValue={ product.rating } /></ul>
 				</div>
 				<div className="blocCollapse">

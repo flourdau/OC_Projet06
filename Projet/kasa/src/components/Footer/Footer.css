@@ -2,7 +2,6 @@ footer {
     width: 100%;
 	background:#000000;
 	color: #FFF;
-    /* display: flex; */
     flex-direction: column;
     text-align: center;
 	justify-content: center;
