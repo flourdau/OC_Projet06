@@ -44,8 +44,8 @@ export default function Products() {
 						<ul className='starsList'><StarScale scaleValue={ product.rating } /></ul>
 					</div>
 					<div className="blocCollapse">
-						<Collapse title={`Description`} content={ product.description }/>
-						<Collapse title={`Équipements`} content={ product.equipments }/>
+						<div><Collapse key={product.description} title={`Description`} content={ product.description }/></div>
+						<div><Collapse key={product.equipments} title={`Équipements`} content={ product.equipments }/></div>
 					</div>
 				</section>
 			</div>
