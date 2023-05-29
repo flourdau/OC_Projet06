@@ -9,23 +9,25 @@ export default function About() {
 
     return (
 
-        <div className="aboutContainer"> 
-            <Banner page="about" />
-            {/* <ul>
-            { Data.map(({ title, content }, i) => (
+        <div className="aboutContainer">
 
-                <Collapse
-                    index={ i } 
-                    title={ title } 
-                    content={ content }
-                />))
-            }
-            </ul> */}
+            <Banner page="about" />
 
             <ul>
-                { Data.forEach(function(item){
-                    console.log(item);
-                }) }
+
+            { 
+
+            Data.map(({ title, content }, i) => (
+
+                <Collapse
+                    key={ title }
+                    index={ i }
+                    title={ title }
+                    content={ content }
+                />))
+
+            }
+
             </ul>
 
         </div>
