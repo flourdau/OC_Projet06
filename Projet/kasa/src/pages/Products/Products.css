@@ -1,6 +1,4 @@
-.productContainer ul {
-    margin:0
-}
+.productContainer ul { margin:0 }
 
 .productContainer {
     margin:0;
@@ -29,21 +27,36 @@
 }
 
 .blocCollapse {
-    gap:96px
+    /* gap:96px */
 }
 
-.blocCollapse li {
-    color: #FFF
+.blocCollapse>li { color: #FFF }
+
+.blocInfo { margin: 30px 0 0 0 }
+
+.blocList { margin: 23px 0 0 0 }
+
+.blocCollapse { margin: 26px 0 0 0 }
+
+.blocCollapse>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.blocInfo {
-    margin: 30px 0 0 0;
-}
-
-.blocList {
-    margin: 23px 0 0 0;
+.blocCollapse>div>div {
+    width: 100%;
 }
 
 .blocCollapse {
-    margin: 26px 0 0 0;
+    gap: 20px;
+}
+
+@media all and (max-width: 650px) {
+
+    .blocCollapse {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

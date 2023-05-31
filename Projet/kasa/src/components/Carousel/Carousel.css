@@ -2,7 +2,7 @@
     margin: auto;
     max-width: 1240px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .carousel_pic {
@@ -17,9 +17,9 @@
     display: flex;
     flex-flow:row;
     justify-content: space-between;
-    position: relative;
+    position: absolute;
     top:-260px;
-    margin: 0 3%;
+    margin: 0 3%
 }
 
 .carousel_btn > img {
@@ -33,9 +33,7 @@
     text-align: center;
     color: #FFFFFF;
     position: relative;
-    top:150px
+    top:200px
 }
 
-.hiddenBtn {
-    display:none
-}
+.hiddenBtn { display:none }

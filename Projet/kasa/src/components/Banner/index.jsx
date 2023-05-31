@@ -18,6 +18,7 @@ export default function Banner({ page, slogan }) {
 		background: `url("${imgPage}")`,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
+		filter:'brightness(75%)',
 		backgroundPosition: 'center'
 	}
 

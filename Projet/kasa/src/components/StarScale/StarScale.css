@@ -5,10 +5,4 @@
     justify-content: flex-end
 }
 
-.starsList ul {
-        gap:10px
-}
-
-.star {
-    /* width: 5px; */
-}
+.starsList ul { gap:10px }

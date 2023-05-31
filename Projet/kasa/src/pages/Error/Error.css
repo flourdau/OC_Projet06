@@ -3,25 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FF6060;
+    color: #FF6060
 }
 
 .errorContainer h2 {
     font-size: 203px;
-    margin: 0 0 66px 0;
+    margin: 0 0 66px 0
 }
 
 .errorContainer h3 {
     font-size: 36px;
     font-weight: 500;
-    margin: 0 0 182px 0;
+    margin: 0 0 182px 0
 }
 
-.errorContainer a {
-    text-decoration: none;
-    color: #FF6060;
-}
+.errorContainer a { color: #FF6060 }
 
-footer {
-    display:none
-}
+footer { display:none }
