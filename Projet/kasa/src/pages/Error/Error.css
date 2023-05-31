@@ -7,11 +7,16 @@
 }
 
 .errorContainer h2 {
-    font-size: 203px;
+    font-size: 283px;
     margin: 0 0 66px 0
 }
 
 .errorContainer h3 {
+    gap: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
     font-size: 36px;
     font-weight: 500;
     margin: 0 0 182px 0
@@ -19,4 +24,18 @@
 
 .errorContainer a { color: #FF6060 }
 
-footer { display:none }
+
+@media all and (max-width: 650px) {
+
+    .errorContainer h2 {
+        font-size: 96px;
+        margin: 198px 0 11px 0
+    }
+    
+    .errorContainer h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0 100px 182px 100px
+    }
+
+}
