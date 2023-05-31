@@ -17,3 +17,10 @@ footer {
 }
 
 .kasa-logo-footer { filter: brightness(0%) invert(100%) }
+
+
+@media all and (max-width: 650px) {
+
+    footer { font-size: 12px }
+
+}

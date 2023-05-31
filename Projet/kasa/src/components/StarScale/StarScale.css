@@ -1,8 +1,8 @@
-.starsList {
+.blocStar {
     width: 198px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end
 }
 
-.starsList ul { gap:10px }
+.blocStar ul { gap:10px }

@@ -18,12 +18,12 @@ export default function Banner({ page, slogan }) {
 		background: `url("${imgPage}")`,
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
-		filter:'brightness(75%)',
+		// filter:'brightness(75%)',
 		backgroundPosition: 'center'
 	}
 
 	return (
 		<section className='kasa-banner' style={ background }>
-			<h2>{ slogan }</h2>
+			<div><h2>{ slogan }</h2></div>
 		</section>
 )}

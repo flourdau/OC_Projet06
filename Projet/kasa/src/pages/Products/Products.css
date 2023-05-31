@@ -6,6 +6,14 @@
     color: #FF6060
 }
 
+.productContainer>section {
+display: flex;
+flex-flow:row wrap;
+    margin:0;
+    width: auto;
+    color: #FF6060
+}
+
 .productContainer h1 {
     font-size: 36px;
     line-height: 51px;
@@ -20,32 +28,41 @@
     vertical-align: Bottom
 }
 
-.blocInfo, .blocList, .tagsList, .blocCollapse {
+.blocList, .blocTag, .blocCollapse {
     display: flex;
-    flex-flow: row;
+    flex-flow: row
+}
+
+.blocList, .blocCollapse {
     justify-content: space-between
 }
 
-.blocCollapse {
-    /* gap:96px */
+.blocInfo, .blocHost, .blocTag, .blocStar {
+    width: 50%;
 }
 
-.blocCollapse>li { color: #FFF }
+.blocInfo { margin: 30px 0 20px 0 }
 
-.blocInfo { margin: 30px 0 0 0 }
+.blocHost {
+    display: flex;
+    justify-content: flex-end
+}
 
 .blocList { margin: 23px 0 0 0 }
 
-.blocCollapse { margin: 26px 0 0 0 }
+.blocCollapse {
+    width: 100%;
+    margin: 26px 0 0 0
+}
 
 .blocCollapse>div {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .blocCollapse>div>div {
-    width: 100%;
+    width: 45%;
 }
 
 .blocCollapse {
@@ -54,9 +71,41 @@
 
 @media all and (max-width: 650px) {
 
-    .blocCollapse {
+    .blocCollapse>div {
         display: flex;
         flex-direction: column;
+    }
+
+    .blocCollapse>div>div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .blocInfo {
+        width: 100%;
+        order: 1 ;
+    }
+
+    .blocHost {
+        padding-top: 10px;
+        order: 4;
+    }
+
+    .blocTag {
+        width: 100%;
+        order: 2;
+        gap:10px
+    }
+    
+    .blocStar {
+        padding-top: 30px;
+        gap: 15px;
+        justify-content: flex-start;
+        order: 3;
+    }
+
+    .blocCollapse {
+        order: 5;
     }
 
 }

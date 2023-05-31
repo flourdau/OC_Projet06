@@ -26,14 +26,14 @@ export default function Carousel({ pictures }) {
 
     return (
 
-        <section className='carousel'>
+        <div className='carousel'>
             <img className="carousel_pic" src={ pictures[id - 1] } alt="Représentation du logement" />
             <div className={ myClassName }>
                 <img src={ Previous } alt={ Previous } onClick={() => handleClick('previous', pictures)} />
                 <p className="carousel_cnt"> { id }/{ lenPictures }</p>
                 <img src={ Next } alt={ Next } onClick={() => handleClick('next', pictures)}/>
             </div>
-        </section>
+        </div>
 
     )
 
