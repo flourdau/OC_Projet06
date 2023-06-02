@@ -1,8 +1,8 @@
 .blocStar {
-    width: 198px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-end
+	width: 198px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: flex-end
 }
 
 .blocStar ul { gap:10px }

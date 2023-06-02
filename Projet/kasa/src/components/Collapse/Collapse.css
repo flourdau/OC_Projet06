@@ -1,27 +1,27 @@
 .collapse {
 	background-color:#FF6060;
 	width: 100%;
-    margin: 0 auto;
-    border-radius: 5px
+	margin: 0 auto;
+	border-radius: 5px
 }
 
 .collapse-bar {
 	cursor: pointer;
 	height: 47px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    padding: 0 15px;
-    border-radius: 5px
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+	padding: 0 15px;
+	border-radius: 5px
 }
 
 .collapse-content-close { display: none }
 
 .collapse-content-open, .collapse-content-open-list {
-    background: #F6F6F6;
+	background: #F6F6F6;
 	display: flex
 }
 
@@ -30,16 +30,16 @@
 .arrowDown { transform: rotate(0) }
 
 .collapse p, .collapse ul {
-    color: #FF6060;
-    font-size: 24px;
-    line-height: 34px;
-    font-weight: 400;
-    padding-top: 27px
+	color: #FF6060;
+	font-size: 24px;
+	line-height: 34px;
+	font-weight: 400;
+	padding-top: 27px
 }
 
 .collapse li { color:#FF6060 }
 
 .collapse-content-open-list {
-    display: flex;
-    flex-flow: column
+	display: flex;
+	flex-flow: column
 }

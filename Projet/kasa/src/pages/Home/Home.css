@@ -3,39 +3,38 @@
 .homeContainer>ul { background: #F6F6F6 }
 
 .homeContainer>ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 32px auto;
-    padding: 32px 0
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 32px auto;
+	padding: 32px 0
 }
 
 .homeContainer ul>li {
-    font-size: 24px;
-    width:340px;
-    margin: 50px 60px
+	font-size: 24px;
+	width:340px;
+	margin: 50px 60px
 }
 
 .homeContainer ul a { text-decoration: none }
 
 .homeContainer ul h2 { margin: 0 2% }
 
+
 @media all and (max-width: 650px) {
 
-    .homeContainer>ul {
-        margin: 20px auto;
-        padding: 0 0
-    }
+	.homeContainer>ul {
+		margin: 20px auto;
+		padding: 0 0
+	}
 
-    .homeContainer ul>li {
-        margin: 20px 0px
-    }
+	.homeContainer ul>li { margin: 20px 0px }
 
-    .homeContainer>ul { background: #FFF }
+	.homeContainer>ul { background: #FFF }
 
-    .homeContainer ul>li {
-        width:100%;
-        margin: 20px 0px
-    }
+	.homeContainer ul>li {
+		width:100%;
+		margin: 20px 0px
+	}
 
 }

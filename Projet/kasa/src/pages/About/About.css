@@ -1,6 +1,6 @@
 .aboutContainer ul {
-    display: flex;
-    flex-flow: column;
-    gap:31px;
-    margin-top: 31px
+	display: flex;
+	flex-flow: column;
+	gap:31px;
+	margin-top: 31px
 }
