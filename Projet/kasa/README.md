@@ -1,9 +1,12 @@
 # OC_Projet06:
 
-## 'Créez une application web de location immobilière avec React'
+## Créez une application web de location immobilière avec React
+
+#### 'Implémentez le front end de Kasa, une application de location de logements. Mettez en place des composants avec React et les routes de l'application avec React Router.'
 
 -   ### [OpenClassrooms Mission Details](https://openclassrooms.com/fr/paths/717/projects/1247/assignment)
 -   ### [Blog post](https://blog.positive-link.net/oc_projet06)
+-   ### [Figma mockup](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/ARCHIVE-UI-Design-Kasa-FR)
 
 ## Getting Started with Create React App
 
