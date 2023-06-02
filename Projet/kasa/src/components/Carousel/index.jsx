@@ -8,37 +8,33 @@ import './Carousel.css'
 
 export default function Carousel({ pictures }) {
 
-    const [ id, setId ] = useState(1)
-    const lenPictures = pictures.length
-    let myClassName ='carousel_btn'
+	const [ id, setId ] = useState(1)
+	const lenPictures = pictures.length
+	let myClassName ='carousel_btn'
 
-    if (lenPictures <= 1) {
-        myClassName = 'hiddenBtn'
-    }
+	if (lenPictures <= 1) {
+		myClassName = 'hiddenBtn'
+	}
 
-    const handleClick = switchPicture => (
+	const handleClick = switchPicture => (
 
-        switchPicture === 'next'
-            ? (setId(id === lenPictures ? 1 : id + 1))
-            : (setId(id === 1 ? lenPictures : id - 1))
+	switchPicture === 'next'
+		? (setId(id === lenPictures ? 1 : id + 1))
+		: (setId(id === 1 ? lenPictures : id - 1))
 
-    )
+	)
 
-    return (
-
-        <div className='carousel'>
-            <img className="carousel_pic" src={ pictures[id - 1] } alt="Représentation du logement" />
-            <div className={ myClassName }>
-                <img src={ Previous } alt={ Previous } onClick={() => handleClick('previous', pictures)} />
-                <p className="carousel_cnt"> { id }/{ lenPictures }</p>
-                <img src={ Next } alt={ Next } onClick={() => handleClick('next', pictures)}/>
-            </div>
-        </div>
-
-    )
-
-}
+	return (
+		<div className='carousel'>
+			<img className="carousel_pic" src={ pictures[id - 1] } alt="Représentation du logement" />
+			<div className={ myClassName }>
+				<img src={ Previous } alt={ Previous } onClick={() => handleClick('previous', pictures)} />
+				<p className="carousel_cnt"> { id }/{ lenPictures }</p>
+				<img src={ Next } alt={ Next } onClick={() => handleClick('next', pictures)}/>
+			</div>
+		</div>
+)}
 
 Carousel.propTypes = {
-    pictures: propTypes.arrayOf(propTypes.string)
+	pictures: propTypes.arrayOf(propTypes.string)
 }

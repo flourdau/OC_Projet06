@@ -14,16 +14,16 @@ import './Products.css'
 
 export default function Products() {	
 	const navigate = useNavigate();
-    const { id } = useParams();
+	const { id } = useParams();
 	const [ product ] = Data.filter(data => data.id === id);
 
 	useEffect(() => {
-        if(product === undefined) {
-            navigate('/error')
-        }
-    })
+		if (product === undefined) {
+			navigate('/error')
+		}
+	})
 
-    if (typeof product === 'object') {
+	if (typeof product === 'object') {
 		return (
 			<div className='productContainer'>
 				<Carrousel pictures={ product.pictures }/>
@@ -36,9 +36,7 @@ export default function Products() {
 						<Host name={ product.host.name } picture={ product.host.picture }/>
 					</div>
 					<ul className='blocTag'>
-					{ 
-						product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />)
-					}
+						{ product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />) }
 					</ul>
 					<ul className='blocStar'><StarScale scaleValue={ product.rating } /></ul>
 					<section className="blocCollapse">
@@ -49,6 +47,4 @@ export default function Products() {
 					</section>
 				</section>
 			</div>
-		)
-	}
-}
+)}}
