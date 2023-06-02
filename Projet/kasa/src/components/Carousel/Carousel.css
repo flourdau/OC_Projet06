@@ -10,7 +10,7 @@
 .carousel_pic {
     height: 415px;
     object-fit: cover;
-    min-width: 100%;
+    min-width: 100%
 }
 
 .carousel_btn {
@@ -44,7 +44,7 @@
 
     .carousel_btn > img {
         width: 24px;
-        height: 24px;
+        height: 24px
     }
 
 }

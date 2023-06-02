@@ -23,39 +23,30 @@ export default function Products() {
         }
     })
 
-    if(typeof product === 'object') {
+    if (typeof product === 'object') {
 		return (
 			<div className='productContainer'>
-
 				<Carrousel pictures={ product.pictures }/>
-
 				<section>
-
 					<div className="blocInfo">
 						<h1>{ product.title }</h1>
 						<h2>{ product.location }</h2>
 					</div>
-
 					<div className="blocHost">
 						<Host name={ product.host.name } picture={ product.host.picture }/>
 					</div>
-				
 					<ul className='blocTag'>
 					{ 
 						product.tags.map(tag => <Tag  key={ `${ product.id }-${ tag }-'tags`} tag={ tag } id={ product.id } />)
 					}
 					</ul>
-			
 					<ul className='blocStar'><StarScale scaleValue={ product.rating } /></ul>
-
-
 					<section className="blocCollapse">
 						<div>
-							<div><Collapse key={ 'blocCollapse1' } title={`Description`} content={ product.description }/></div>
-							<div><Collapse key={ 'blocCollapse2' } title={`Équipements`} content={ product.equipments }/></div>
+							<div><Collapse key={ 'blocCollapse1' } title={ `Description` } content={ product.description }/></div>
+							<div><Collapse key={ 'blocCollapse2' } title={ `Équipements` } content={ product.equipments }/></div>
 						</div>
 					</section>
-
 				</section>
 			</div>
 		)

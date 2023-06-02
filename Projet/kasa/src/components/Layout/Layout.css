@@ -7,9 +7,7 @@
 	font-family: 'Montserrat', sans-serif
 }
 
-body {
-	background-color:#FFF;
-}
+body { background-color:#FFF }
 
 #root {
 	margin: 0 100px;
@@ -24,7 +22,7 @@ main { width: 100% }
 footer { display:flex }
 
 @media all and (max-width: 700px) {
-	#root {
-		margin: 0 21px;
-	}
+
+	#root { margin: 0 21px }
+
 }

@@ -9,16 +9,12 @@ export default function StarScale({ scaleValue }) {
     let index = 0
 
     while (++index <= 5) {
-
         if (scaleValue < index) {
             range.push(<li key={ index }><img src={ emptyStar } alt="Empty star" /></li>)
         }
         else {
             range.push(<li key={ index }><img src={ lightStar } alt="Star" /></li>)
         }
-
     }
-
     return range
-
 }
