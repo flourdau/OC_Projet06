@@ -36,5 +36,5 @@ export default function Carousel({ pictures }) {
 )}
 
 Carousel.propTypes = {
-	pictures: propTypes.arrayOf(propTypes.string)
+	pictures: propTypes.arrayOf(propTypes.string)	
 }
