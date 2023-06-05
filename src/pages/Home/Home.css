@@ -3,6 +3,7 @@
 .homeContainer>ul { background: #F6F6F6 }
 
 .homeContainer>ul {
+	max-width: 1240px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -13,7 +14,7 @@
 .homeContainer ul>li {
 	font-size: 24px;
 	width:340px;
-	margin: 50px 60px
+	margin: 50px 25px
 }
 
 .homeContainer ul a { text-decoration: none }
