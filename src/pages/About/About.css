@@ -1,6 +1,9 @@
 .aboutContainer ul {
+	max-width: 1023px;
 	display: flex;
 	flex-flow: column;
+	justify-content:center ;
+	align-items: center;
 	gap:31px;
-	margin-top: 31px
+	margin: 31px auto
 }
